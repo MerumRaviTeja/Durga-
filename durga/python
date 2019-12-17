@@ -1,0 +1,11 @@
+
+def answer(days_count,current_day):
+    global a
+
+    current_day_index=a.index(current_day)
+    daysindex = (current_day_index+days_count) % 7
+    print(a[daysindex])
+days_count=int(input("Enter day count: "))
+current_day=str(input("Enter day: "))
+a=["sun","mon","tue","wed","thur","fri","sat"]
+answer(days_count,current_day)
